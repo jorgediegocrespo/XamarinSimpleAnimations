@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Animations" x:Class="Animations.MainPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        
+        <Frame x:Name="Frame" 
+               Grid.Row="0" Grid.ColumnSpan="3" 
+               HasShadow="true" BackgroundColor="Red" 
+               HeightRequest="100" WidthRequest="100"
+               HorizontalOptions="Center" VerticalOptions="Center" />
+        
+        <Button x:Name="BtnTranslate" 
+                Grid.Row="1" Grid.Column="0" 
+                Text="Translate" 
+                HorizontalOptions="FillAndExpand" VerticalOptions="Center" 
+                Clicked="BtnTranslate_Clicked"/>
+        <Button x:Name="BtnScale" 
+                Grid.Row="1" Grid.Column="1" 
+                Text="Scale" 
+                HorizontalOptions="FillAndExpand" VerticalOptions="Center" 
+                Clicked="BtnScale_Clicked"/>
+        <Button x:Name="BtnFade" 
+                Grid.Row="1" Grid.Column="2" 
+                Text="Fade" 
+                HorizontalOptions="FillAndExpand" VerticalOptions="Center" 
+                Clicked="BtnFade_Clicked"/>
+        
+        <Button x:Name="BtnRotate" 
+                Grid.Row="2" Grid.Column="0" 
+                Text="Rotate" 
+                HorizontalOptions="FillAndExpand" VerticalOptions="Center" 
+                Clicked="BtnRotate_Clicked"/>
+        <Button x:Name="BtnRotateX" 
+                Grid.Row="2" Grid.Column="1" 
+                Text="RotateX" 
+                HorizontalOptions="FillAndExpand" VerticalOptions="Center" 
+                Clicked="BtnRotateX_Clicked"/>
+        <Button x:Name="BtnRotateY" 
+                Grid.Row="2" Grid.Column="2" 
+                Text="RotateY" 
+                HorizontalOptions="FillAndExpand" VerticalOptions="Center" 
+                Clicked="BtnRotateY_Clicked"/>
+    </Grid>
+</ContentPage>
